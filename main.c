@@ -131,35 +131,6 @@ void vProcessStartScheduler(PCB_t process[], int n)
     
     for(int i = 0; i < n; i++)
     {
-        // /* 记录到达时间相同的结构体元素和个数（只取一个元素） */
-        // for(int j = 0; j < n; j++)
-        // {
-        //     /* 判断该进程是否被执行 */
-        //     if(process[j].start_time == 0 && process[j].finish_time == 0)
-        //     {
-        //         /* 放入比较结构体数组 */
-        //         Process_TempCompare[0] = process[j];
-        //         /* 记录到达时间 */
-        //         arrival_time_Compare = process[j].arrival_time;
-        //         /* 记录id */
-        //         Id_compare = process[j].id;
-        //         break;
-        //     }
-        // }
-        // /* 取出到达时间相等的进程 */
-        // int position = 0;
-        // for(int j = 0; j < n; j++)
-        // {
-        //     if((process[j].start_time == 0) && (process[j].finish_time == 0))
-        //     {
-        //         if((process[j].arrival_time == arrival_time_Compare) && (process[j].id != Id_compare))
-        //         {
-        //             position ++;
-        //             Process_TempCompare[position] = process[j];
-        //             count ++;
-        //         }
-        //     }
-        // }
         int position = 0;
         count = 0;
         for(int j = 0; j < n; j++)
